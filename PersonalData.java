@@ -1,0 +1,9 @@
+class AadharCard
+{
+	
+}
+
+class PanCard
+{
+	
+}
