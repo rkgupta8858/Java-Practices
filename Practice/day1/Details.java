@@ -1,10 +1,11 @@
-package com.rahul.rk;
+package com.gupta.rk;
+
 public class Details
 {
-	protected void data()
+	private void data()
 	{
-		System.out.println("Rahul Kumar Gupta");
-		int a=10;
-		System.out.println(a);
+		System.out.println("hello rahul how are you");
 	}
+	// error: data() has private access in Details details.data()
 }
+
