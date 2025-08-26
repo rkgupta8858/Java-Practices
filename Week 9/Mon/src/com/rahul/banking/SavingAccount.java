@@ -17,9 +17,14 @@ public class SavingAccount implements IBanking {
 
 	@Override
 	public void withdraw(double amount) {
-		balance = balance - amount;
-		System.out.println("Withdraw " + amount + " from Saving Account. New Balance : " + balance);
-
+		if (balance - amount >= MIN_BALANCE) {
+			balance = balance - amount;
+			System.out.println("Withdraw " + amount + " from Saving Account. New Balance : " + balance);
+		}
+		else
+		{
+			System.out.println("Insufficient Balance !!");
+		}
 	}
 
 	@Override

@@ -17,7 +17,7 @@ public class Driver {
 		double balance1 = ca.checkBalance();
 		System.out.println("Current Balance is : "+balance1);
 		ca.deposite(1000);
-		ca.withdraw(2000);
+		ca.withdraw(15000);
 		balance1 = ca.checkBalance();
 		System.out.println("Current Balance is : "+balance1);
 
