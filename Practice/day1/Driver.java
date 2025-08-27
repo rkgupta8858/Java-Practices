@@ -1,30 +1,31 @@
-package com.rahul.inheritsame;
+package com.rahul.inheritances;
 
 class Parent{
-	int a = 10;
-	void show() {
-		System.out.println("Parent : "+a);
+	private void run() {
+		System.out.println("Person Is running !!");
+	}
+	
+	void prun() {
+		run();
 	}
 }
 
 class Child extends Parent{
-	int a = 20;
-	void show() {
-		System.out.println("Child : "+a);
-		System.out.println("Parent using super : "+super.a);
+	void run() {
+		System.out.println("Child Is running !!");
 	}
 }
-
 
 public class Driver {
 
 	public static void main(String[] args) {
+		
 		Parent p = new Child();
-		System.out.println(p.a);
-		p.show();
+	//	p.run(); // The method run() from the type Parent is not visible
+		p.prun();
 		
 		Child c = new Child();
-		System.out.println(c.a);
+		c.run();
 	}
 
 }
