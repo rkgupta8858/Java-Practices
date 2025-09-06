@@ -10,7 +10,9 @@ public class Driver {
 	public void ageVerification(int age) throws AgeValidatorException {
 
 		if (age < 18) {
+			System.out.println("Not eligible !!");
 			throw new AgeValidatorException("Age Should be greater than @18 !!");
+			
 		} else {
 			System.out.println("You are Eligible for Voting !!");
 		}
