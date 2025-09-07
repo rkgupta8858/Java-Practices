@@ -7,8 +7,9 @@ public class Driver {
 		int b = 0;
 		try {
 			int c = a/b;	
-		} catch (Exception e) {
+		} catch (ArithmeticException e) {
 			System.out.println("Not divided by 0 !!");
+			e.printStackTrace();
 		}
 	}
 
