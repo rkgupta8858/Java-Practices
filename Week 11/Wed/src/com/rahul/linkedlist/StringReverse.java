@@ -1,0 +1,26 @@
+package com.rahul.linkedlist;
+
+import java.util.Collections;
+import java.util.LinkedList;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+		LinkedList<String> list = new LinkedList<String>();
+		list.add("Rahul");
+		list.add("Rohit");
+		list.add("Ravi");
+		list.add("Rohan");
+		list.add("Anand");
+		list.add("Aryan");
+		System.out.println(list);
+		
+		
+		System.out.println(list.get(1));
+		
+		Collections.reverse(list);
+		System.out.println(list);
+
+	}
+
+}
