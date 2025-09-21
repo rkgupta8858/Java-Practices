@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.rahul.rk.bean.TestBean">
+	
+		<property name="empId" value="101"></property>
+		<property name="empName" value="Rahul"></property>
+		<property name="empSal" value="50000.50"></property>
+
+		<property name="colours">
+			<array>
+				<value>Red</value>
+				<value>Blue</value>
+				<value>Green</value>
+				<value>Pink</value>
+				<value>Red</value>
+			</array>
+		</property>
+		<property name="name">
+			<list>
+				<value>Red</value>
+				<value>Blue</value>
+				<value>Green</value>
+				<value>Pink</value>
+				<value>Red</value>
+			</list>
+		</property>
+		<property name="hobbies">
+			<set>
+				<value>Red</value>
+				<value>Blue</value>
+				<value>Green</value>
+				<value>Pink</value>
+				<value>Red</value>
+			</set>
+		</property>
+		<property name="infor">
+		<map>
+			<entry key="101" value="Rahul"></entry>
+			<entry key="102" value="Akanksha"></entry>
+			<entry key="103" value="Amit"></entry>
+			<entry key="104" value="Nadeem"></entry>
+			<entry key="105" value="Rahul"></entry>
+		</map>
+		</property>
+
+	</bean>
+
+</beans>
