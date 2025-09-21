@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <!-- 
+   <bean name="rahul" class="com.rahul.rk.bean.TestBean">
+		<property name="employee" ref="emp"></property>
+   </bean>
+   <bean name="emp" class="com.rahul.rk.bean.Employee">
+   		<property name="empId" value="101"></property>
+   		<property name="empName" value="Rahul Kumar Gupta"></property>
+   		<property name="empSal" value="50000.0"></property>
+   </bean> 
+   -->
+   
+   <!-- if we use constructer then -->
+   
+   <bean name="testBean" class="com.rahul.rk.bean.TestBean">
+   <constructor-arg ref="emp"></constructor-arg>
+   </bean>
+   <bean name="emp" class="com.rahul.rk.bean.Employee">
+   <constructor-arg value="101"></constructor-arg>
+   <constructor-arg value="Rahul K Gupta"></constructor-arg>
+   <constructor-arg value="55555.0"></constructor-arg>
+   </bean>
+
+</beans>
