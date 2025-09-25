@@ -1,4 +1,4 @@
-package com.rahul.divideby;
+package com.rahul.evennumber;
 
 import java.util.Arrays;
 import java.util.List;
