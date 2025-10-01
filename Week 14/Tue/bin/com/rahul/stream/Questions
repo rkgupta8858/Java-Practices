@@ -1,0 +1,39 @@
+	1.	Given a list of integers, write a program to square each number using streams.
+	
+	2.	Convert a list of strings into a list of their lengths using streams.
+	
+	3.	You have a list of employee objects. Extract only their names into a list.
+	
+	4.	Given a list of sentences, split each into words and flatten into a single list of words.
+	
+	5.	Given a list of lists of integers, flatten into a single list and remove duplicates.
+	
+	6.	You have a list of users, each having a list of phone numbers. Get all phone numbers in one list.
+	
+	7.	Given a list of numbers, filter only prime numbers.
+	
+	8.	From a list of strings, filter those that start with "A".
+	
+	9.	Given a list of integers, filter out negative numbers.
+	
+	10.	From a list of employees, filter those with salary greater than 50,000.
+	
+	11.	Count how many strings in a list have length greater than 5.
+	
+	12.	Given a list of integers, count how many are even numbers.
+	
+	13.	Find the minimum number in a list of integers using streams.
+	
+	14.	Find the maximum salary from a list of employees.
+	
+	15.	From a list of strings, find the longest word.
+	
+	16.	Collect all odd numbers from a list into a List<Integer>.
+	
+	17.	Collect unique characters from a string list into a Set<Character>.
+	
+	18.	Collect employee names into a comma-separated String.
+	
+	19.	Group a list of students by their grade.
+	
+	20.	Partition a list of numbers into even and odd
