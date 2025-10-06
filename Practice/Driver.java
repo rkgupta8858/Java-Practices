@@ -1,27 +1,17 @@
-package com.rahul.treeset;
+package com.rahul.stream;
 
-import java.util.Iterator;
-import java.util.TreeSet;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Driver {
-
 	public static void main(String[] args) {
-		int i = 1;
-		TreeSet<String> treeSet = new TreeSet<String>();
-		treeSet.add("Mango");
-		treeSet.add("Banana");
-		treeSet.add("Litchi");
-		treeSet.add("Papaya");
-		treeSet.add("Mango");
-		
-		System.out.println(treeSet);
-		
-		Iterator<String> itr = treeSet.iterator();
-		while(itr.hasNext()) {
-			System.out.println(i +"-"+itr.next());
-			i++;
-		}
+		List<String> list = Arrays.asList("Bengalore", "Mumbai", "Hyd", "Ahm", "Delhi", "Mengalore");
+		System.out.println(list);
 
+		Map<Object, List<String>> output = list.stream().collect(Collectors.groupingBy(s -> s.length()));
+		System.out.println(output);
 	}
 
 }
