@@ -1,6 +1,6 @@
 package com.rahul.duplicate;
 
-// Find first duplicate character 
+// Find first Non repeating character 
 
 public class FIndFirstDuplicateChar {
 
