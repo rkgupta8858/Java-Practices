@@ -1,17 +1,26 @@
-package com.rahul.stream;
+package com.rahul.executorservice;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+class ExecutorThread extends Thread{
+	@Override
+	public void run() {
+		for (int i = 0; i <5; i++) {
+			System.out.println("ExecutorThread.run()"+ Thread.currentThread().getName());
+		}
+	}
+}
 
 public class Driver {
-	public static void main(String[] args) {
-		List<String> list = Arrays.asList("Bengalore", "Mumbai", "Hyd", "Ahm", "Delhi", "Mengalore");
-		System.out.println(list);
 
-		Map<Object, List<String>> output = list.stream().collect(Collectors.groupingBy(s -> s.length()));
-		System.out.println(output);
+	public static void main(String[] args) {
+		ExecutorThread executorThread = new ExecutorThread();
+		ExecutorService executorService = Executors.newCachedThreadPool();
+		for (int i = 0; i < 5; i++) {
+			executorService.submit(executorThread);
+		}
+
 	}
 
 }
