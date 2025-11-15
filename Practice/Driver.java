@@ -1,28 +1,35 @@
-package com.rahul.executorframework;
+package com.rahul.callable1;
 
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-class ExecutorExample extends Thread {
+class MyThread implements Callable<String>
+{
+
 	@Override
-	public void run() {
-		System.out.println("My thread : "+ Thread.currentThread().getName());
+	public String call() {
+		System.out.println("MyThread.call()"+ Thread.currentThread().getName());
+		String cars =car();
+		return cars;
+		
 	}
+	public String car() {
+		System.out.println("MyThread.car()"+Thread.currentThread().getName());
+		return null;
+	}
+	
 }
 
 public class Driver {
 
 	public static void main(String[] args) {
-		ExecutorExample example = new ExecutorExample();
-//		ExecutorService executorService = Executors.newFixedThreadPool(20);
-//		ExecutorService executorService = Executors.newCachedThreadPool();
-//		ExecutorService executorService = Executors.newSingleThreadExecutor();
-		ExecutorService executorService = Executors.newScheduledThreadPool(250);
-		for (int i = 0; i < 255; i++) {
-			executorService.submit(example);
+		MyThread myThread = new MyThread();
+		ExecutorService executorService = Executors.newCachedThreadPool();
+		for (int i = 0; i < 5; i++) {
+			executorService.submit(myThread);
 		}
 		executorService.shutdown();
-		
 	}
 
 }
