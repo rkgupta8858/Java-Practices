@@ -1,0 +1,5 @@
+finally --> cleanup opened db connection, and many more
+can you return from the finally --> yes
+finally will always override
+if System.exit(0); in try block . then finally block will not execute
+
