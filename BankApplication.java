@@ -45,4 +45,6 @@ class BankApplication
 		System.out.println("Remaining balance is : "+newBalance);
 		
 	}
-}
+
+	
+} 
