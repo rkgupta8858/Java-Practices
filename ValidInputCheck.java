@@ -17,4 +17,5 @@ class ValidInputCheck
 			System.out.print("True");
 		}
 	}
+
 }
