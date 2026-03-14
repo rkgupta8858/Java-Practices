@@ -3,7 +3,7 @@ package com.kodewala;
 class EvenOdd extends Thread {
 	@Override
 	public void run() {
-		try {
+		try { 
 			even();
 			odd();
 
