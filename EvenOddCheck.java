@@ -8,7 +8,7 @@ class EvenOdd extends Thread {
 			odd();
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			e.printStackTrace(); 
 		}
 		System.out.println("EvenOdd class Thread Name : " + Thread.currentThread().getName());
 	}
