@@ -3,7 +3,7 @@ import java.util.Scanner;
 class GSTTax
 {
 	static int rate1 = 5;
-	static int rate2 = 18;
+	static int rate2 = 18; 
 	static int rate3 = 28;
 	static int rateType;
 	/* public void taxRate(int _rate1, int _rate2, int _rate3)
