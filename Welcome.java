@@ -3,7 +3,7 @@ class Greeting
 	public static void main(String args[]) 
 	{ 
 		
-		System.out.println("Hello Bengalore! "); 
+		System.out.println("Hello Bengalore! ");  
 	} 
 
 }   
