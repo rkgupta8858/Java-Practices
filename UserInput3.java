@@ -7,7 +7,7 @@ class UserInput3
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("Enter your name : ");
-		String name = scanner.next();
+		String name = scanner.next(); 
 		System.out.println("Name is : "+ name);
 		
 	}
