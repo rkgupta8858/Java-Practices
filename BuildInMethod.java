@@ -1,6 +1,6 @@
 class BuildInMethod
 {
-	public static void main(String args[])
+	public static void main(String args[]) 
 	{ 
 		System.out.println("This is a build in method !!!");
 		
